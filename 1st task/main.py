@@ -1,8 +1,7 @@
-from sqlalchemy.orm import Session
-
 from app.bitrix import get_contact_from_bitrix, update_contact_gender_in_bitrix
 from app.database import get_db
 from app.models import NamesMan, NamesWoman
+from sqlalchemy.orm import Session
 
 
 def get_gender_from_db(name: str, db: Session) -> str:
